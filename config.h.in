@@ -1,0 +1,85 @@
+/* ========================================================================= */
+/* ------------------------------------------------------------------------- */
+/*!
+  \file			config.h
+  \date			March 2014
+  \author		Nicu Tofan
+
+*/
+/* ------------------------------------------------------------------------- */
+/* ========================================================================= */
+#ifndef XPOTEPU_config_h_INCLUDE
+#define XPOTEPU_config_h_INCLUDE
+
+//
+//
+//
+//
+/*  INCLUDES    ------------------------------------------------------------ */
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*  INCLUDES    ============================================================ */
+//
+//
+//
+//
+/*  DEFINITIONS    --------------------------------------------------------- */
+
+//! the name of this project
+#define @PROJECT_NAME_U@_PROJECT_NAME   "@PROJECT_NAME@"
+
+//! major version (ABI not preserved between these)
+#define @PROJECT_NAME_U@_MAJOR_VERSION      @XPOTEPU_MAJOR_VERSION@
+
+//! minor version; ABI is preserved
+#define @PROJECT_NAME_U@_MINOR_VERSION      @xpotepu_MINOR_VERSION@
+
+//! bug fixes
+#define @PROJECT_NAME_U@_PATCH_VERSION      @xpotepu_PATCH_VERSION@
+
+//! the version ans a 32-bit integer
+#define @PROJECT_NAME_U@_VERSION            \
+    @PROJECT_NAME_U@_MAJOR_VERSION * 0x100000 + \
+    @PROJECT_NAME_U@_MINOR_VERSION * 0x1000 + \
+    @PROJECT_NAME_U@_PATCH_VERSION * 0x1
+
+//! version as a string
+#define @PROJECT_NAME_U@_VERSION_S          "@xpotepu_VERSION@"
+
+//! when it was build (UTC)
+#define @PROJECT_NAME_U@_BUILD_TIME         "@xpotepu_BUILD_TIME@"
+
+//! components on target system
+/// @{
+
+
+/// @}
+
+/*  DEFINITIONS    ========================================================= */
+//
+//
+//
+//
+/*  DATA    ---------------------------------------------------------------- */
+
+/*  DATA    ================================================================ */
+//
+//
+//
+//
+/*  FUNCTIONS    ----------------------------------------------------------- */
+
+/*  FUNCTIONS    =========================================================== */
+//
+//
+//
+//
+/* ------------------------------------------------------------------------- */
+/* ========================================================================= */
+#ifdef __cplusplus
+}
+#endif
+#endif /* XPOTEPU_config_h_INCLUDE */
